@@ -1,0 +1,120 @@
+/* Resetting margins, padding, and box-sizing to ensure consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    padding: 10px 20px;
+    background: #FFFFFF; /* White background */
+    border-bottom: 1px solid #D9D9D9; /* A subtle bottom border */
+    width: 100%; /* Ensure header spans full width of the viewport */
+}
+
+.logo {
+    height: 40px; /* Adjust size as needed */
+    width: auto;
+    flex-shrink: 0; /* Prevents the logo from shrinking */
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* Space between buttons */
+    padding: 10px 20px;
+}
+
+body, html {
+    height: 100%; /* Ensures the HTML and body are full height of the viewport */
+    margin: 0; /* Resets default margin */
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column; /* Stacks children elements vertically */
+    overflow: auto; /* Ensures the body is scrollable */
+    background-color: #FFFFFF; /* White background */
+    font-family: Verdana, sans-serif; /* Verdana font as default */
+    color: #000000; /* Black color text for body and headings */
+    line-height: 1.6; /* Appropriate line height for readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, sans-serif; /* Ensuring headings use Verdana */
+    color: #000000; /* Black color for headings */
+    margin-top: 20px; /* Top margin for separation */
+    margin-bottom: 10px; /* Bottom margin for grouping */
+}
+
+/* Style paragraphs */
+p {
+  font-family: Verdana, sans-serif; /* Verdana font as default */
+  color: #000000; /* Set p color to black */
+  margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+/* Styling buttons with a specific design */
+button {
+    background-color: #000000; /* Black background for buttons */
+    color: #FFFFFF; /* White text on buttons */
+    border: none; /* No borders for a clean look */
+    padding: 10px 20px; /* Padding inside the button */
+    text-transform: uppercase; /* Uppercase text for a modern look */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #333333; /* Darken the button background on hover for feedback */
+}
+
+.col-md-6 {
+    margin: 20px auto;
+    height: 50vh; /* This will make the div take up 60% of the height of the viewport */
+}
+
+.carousel-inner {
+    border: 1px solid #D9D9D9; 
+    background-color: #EFEFEF;
+    height: 50vh; /* This will make the div take up 60% of the height of the viewport */
+}
+
+.carousel slide scrollable_div {
+  height: 50vh; /* This will make the div take up 60% of the height of the viewport */
+}
+
+.scrollable-div {
+  overflow-y: scroll; /* This will always show a vertical scrollbar */
+  height: 50vh; /* This will make the div take up 60% of the height of the viewport */
+}
+
+.custom-caption {
+    top: 0;
+    bottom: auto;
+    padding-top: 20px; /* Add some padding at the top */
+    padding-bottom: 20px; /* Add some padding at the bottom */
+    height: 50vh; /* This will make the div take up 60% of the height of the viewport */
+}
+
+.footer {
+    position: fixed; /* Fixes the footer at a specific location */
+    bottom: 0; /* Anchors the footer to the bottom of the viewport */
+    width: 100%; /* Ensures the footer extends across the full width of the viewport */
+    height: 40px; /* Set the height of the footer */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center; /* Centers the text inside the footer */
+    padding: 5px; /* Provides padding around the content */
+    background-color: #EFEFEF; /* Light grey background, can be adjusted */
+    border-top: 1px solid #D9D9D9; /* A subtle top border */
+  }
+}
+
+.footer-logo {
+    height: 30px; /* Adjust according to your logo's dimensions */
+    width: auto; /* Maintains the aspect ratio of the logo */
+    justify-content: center; /* Centers content horizontally */
+}
