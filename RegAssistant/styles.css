@@ -108,7 +108,7 @@ button:hover {
     align-items: center; /* Centers content vertically */
     text-align: center; /* Centers the text inside the footer */
     padding: 5px; /* Provides padding around the content */
-    background-color: #EFEFEF; /* Light grey background, can be adjusted */
+    background-color: #000000; /* Light grey background, can be adjusted */
     border-top: 1px solid #D9D9D9; /* A subtle top border */
   }
 }
