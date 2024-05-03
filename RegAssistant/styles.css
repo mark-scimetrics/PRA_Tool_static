@@ -118,3 +118,13 @@ button:hover {
     width: auto; /* Maintains the aspect ratio of the logo */
     justify-content: center; /* Centers content horizontally */
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+  
+.sr-only {
+  color: #000000;
+}
+
